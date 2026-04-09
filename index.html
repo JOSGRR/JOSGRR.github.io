@@ -1,9 +1,16 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CESFAM Digital</title>  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">  <style>
-    * { box-sizing: border-box; scroll-behavior: smooth; }
+  <title>CESFAM Digital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -23,10 +30,18 @@
       gap: 20px;
       padding: 15px;
       z-index: 1000;
+      flex-wrap: wrap;
     }
 
-    nav a { color: #ccc; text-decoration: none; font-size: 14px; }
-    nav a:hover { color: #d4af37; }
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
 
     header {
       height: 100vh;
@@ -36,9 +51,15 @@
       align-items: center;
       text-align: center;
       background: radial-gradient(circle, #1a1a1a, #000);
+      position: relative;
+      padding: 20px;
     }
 
-    header h1 { font-size: 3em; color: #d4af37; }
+    header h1 {
+      font-size: 3em;
+      color: #d4af37;
+      margin: 0;
+    }
 
     section {
       padding: 100px 20px;
@@ -49,9 +70,14 @@
       transition: 1s;
     }
 
-    section.visible { opacity: 1; transform: translateY(0); }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-    h2 { color: #d4af37; }
+    h2 {
+      color: #d4af37;
+    }
 
     .grid {
       display: grid;
@@ -64,6 +90,7 @@
       width: 100%;
       border-radius: 15px;
       opacity: 0.9;
+      display: block;
     }
 
     .speaker {
@@ -87,6 +114,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 10px;
     }
 
     footer {
@@ -94,112 +122,249 @@
       padding: 30px;
       background: #000;
     }
-  </style></head><body><nav>
-  <a href="#intro">Inicio</a>
-  <a href="#problema">Problema</a>
-  <a href="#objetivo">Objetivo</a>
-  <a href="#solucion">Solución</a>
-  <a href="#funciones">Funciones</a>
-  <a href="#beneficios">Beneficios</a>
-</nav><header id="intro">
-  <div style="position:absolute; top:20px; right:30px;">
-    <img src="./logo.jpg" alt="Duoc UC" style="width:120px; opacity:0.9;">
-  </div>  <h1>CESFAM Digital</h1>
-  <p style="margin-top:10px; font-size:1.2em; opacity:0.8;">Atención médica moderna, accesible y sin filas</p>  <div style="margin-top:40px; font-size:0.95em; opacity:0.7; line-height:1.8;">
-    <strong>Proyecto Académico - Duoc UC</strong><br><br>
-    Josue Mattje<br>
-    Benjamín Cornejo<br>
-    Alan Mendoza<br>
-    Josmar Godoy<br>
-    Michel Peña<br>
-    Daniel Muñoz
-  </div>  <div style="position:absolute; bottom:30px; opacity:0.5; font-size:0.8em;">
-    2026
-  </div>
-</header><!-- INTRO --><section>
-  <div class="grid">
-    <div>
-      <h2>Introducción</h2>
-      <p>En Chile, los CESFAM cumplen un rol clave en la atención primaria, pero actualmente enfrentan una alta demanda que genera largas filas y tiempos de espera prolongados.</p>
-      <p>Esta situación afecta especialmente a adultos mayores, quienes presentan dificultades de movilidad y menor acceso a herramientas digitales.</p>
-      <div class="speaker">Josue: Explica que es un problema real del sistema de salud y cómo afecta directamente a los adultos mayores.</div>
-    </div>
-    <img src="./imagen1.jpg">
-  </div>
-</section><!-- PROBLEMA --><section id="problema">
-  <div class="grid">
-    <div>
-      <h2>Problemas Identificados</h2>
-      <p>Estas dificultades no solo generan incomodidad, sino que afectan directamente la salud al retrasar diagnósticos y tratamientos.</p>
-      <ul>
-        <li>Largas filas en centros de salud</li>
-        <li>Dificultad de traslado</li>
-        <li>Uso complejo de tecnología</li>
-        <li>Dependencia de terceros</li>
-      </ul>
-      <div class="speaker">Michel: Explica cada problema y recalca que afecta la calidad de vida y la salud.</div>
-    </div>
-    <img src="./imagen2.jpg">
-  </div>
-</section><!-- OBJETIVO --><section id="objetivo">
-  <div class="grid">
-    <div>
-      <h2>Objetivo</h2>
-      <p>Desarrollar una solución tecnológica accesible que permita a los adultos mayores solicitar horas médicas de forma remota, rápida y sencilla.</p>
-      <p>Se busca mejorar la eficiencia del sistema de salud y fomentar la inclusión digital.</p>
-      <div class="speaker">Benja: Explica que el objetivo no es solo tecnológico, sino mejorar la vida de las personas.</div>
-    </div>
-    <img src="./imagen3.jpg">
-  </div>
-</section><!-- SOLUCION --><section id="solucion">
-  <div class="grid">
-    <div>
-      <h2>Propuesta de Solución</h2>
-      <p>Se propone una aplicación móvil diseñada específicamente para adultos mayores, priorizando simplicidad y accesibilidad.</p>
-      <p>Incluye navegación intuitiva, botones grandes y asistencia visual y por voz.</p>
-      <div class="speaker">Alan: Explica por qué esta solución sí funciona para este público.</div>
-    </div>
-    <img src="./imagen3.jpg">
-  </div>
-</section><!-- FUNCIONES --><section id="funciones">
-  <div class="grid">
-    <div>
-      <h2>Funcionalidades</h2>
-      <p>La aplicación permite un proceso simple: registrarse, seleccionar CESFAM, ver horas disponibles y agendar.</p>
-      <div class="card">Registro con RUT</div>
-      <div class="card">Visualización de horas disponibles</div>
-      <div class="card">Reserva y confirmación</div>
-      <div class="card">Recordatorios automáticos</div>
-      <div class="card">Reprogramación</div>
-      <button onclick="simular()">Simular Reserva</button>
-      <div class="speaker">Josmar: Explica el flujo simple y el diseño accesible.</div>
-    </div>
-    <img src="./imagen4.jpg">
-  </div>
-</section><!-- BENEFICIOS --><section id="beneficios">
-  <div class="grid">
-    <div>
-      <h2>Beneficios</h2>
-      <p>Para los usuarios: mayor autonomía, ahorro de tiempo y mejor calidad de vida.</p>
-      <p>Para el sistema de salud: menos filas, mejor organización y optimización de recursos.</p>
-      <div class="speaker">Daniel: Explica que todos ganan con esta solución.</div>
-    </div>
-    <img src="./imagen5.jpg">
-  </div>
-</section><!-- CONCLUSION --><section>
-  <h2>Conclusión</h2>
-  <p>CESFAM Digital es una solución innovadora que mejora el acceso a la salud, fomenta la inclusión digital y contribuye a un sistema más eficiente y centrado en las personas.</p>
-  <div class="speaker">Daniel: Cierra con impacto, destacando la importancia del proyecto.</div>
-</section><footer>Proyecto académico 2026</footer><script>
-  const sections = document.querySelectorAll("section");
-  window.addEventListener("scroll", () => {
-    sections.forEach(sec => {
-      if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
-        sec.classList.add("visible");
-      }
-    });
-  });
 
-  function simular(){ alert("Hora médica reservada correctamente ✅"); }
-</script></body>
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    .logo img {
+      width: 120px;
+      opacity: 0.9;
+    }
+
+    .year {
+      position: absolute;
+      bottom: 30px;
+      opacity: 0.5;
+      font-size: 0.8em;
+    }
+
+    /* ========================= */
+    /* 📱 RESPONSIVE CELULAR */
+    /* ========================= */
+    @media (max-width: 768px) {
+      nav {
+        gap: 10px;
+        padding: 10px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      header {
+        height: 100vh;
+        padding-top: 80px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      header p {
+        font-size: 1em !important;
+        padding: 0 10px;
+      }
+
+      .logo {
+        position: static;
+        margin-bottom: 20px;
+      }
+
+      .logo img {
+        width: 80px;
+      }
+
+      .year {
+        position: static;
+        margin-top: 30px;
+      }
+
+      section {
+        padding: 70px 15px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .card {
+        font-size: 0.9em;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+      }
+
+      .speaker {
+        font-size: 0.8em;
+      }
+
+      img {
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#intro">Inicio</a>
+    <a href="#problema">Problema</a>
+    <a href="#objetivo">Objetivo</a>
+    <a href="#solucion">Solución</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#beneficios">Beneficios</a>
+  </nav>
+
+  <header id="intro">
+    <div class="logo">
+      <img src="./logo.jpg" alt="Duoc UC">
+    </div>
+
+    <h1>CESFAM Digital</h1>
+    <p style="margin-top:10px; font-size:1.2em; opacity:0.8;">Atención médica moderna, accesible y sin filas</p>
+
+    <div style="margin-top:40px; font-size:0.95em; opacity:0.7; line-height:1.8;">
+      <strong>Proyecto Académico - Duoc UC</strong><br><br>
+      Josue Mattje<br>
+      Benjamín Cornejo<br>
+      Alan Mendoza<br>
+      Josmar Godoy<br>
+      Michel Peña<br>
+      Daniel Muñoz
+    </div>
+
+    <div class="year">
+      2026
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section>
+    <div class="grid">
+      <div>
+        <h2>Introducción</h2>
+        <p>En Chile, los CESFAM cumplen un rol clave en la atención primaria, pero actualmente enfrentan una alta demanda que genera largas filas y tiempos de espera prolongados.</p>
+        <p>Esta situación afecta especialmente a adultos mayores, quienes presentan dificultades de movilidad y menor acceso a herramientas digitales.</p>
+        <div class="speaker">Josue: Explica que es un problema real del sistema de salud y cómo afecta directamente a los adultos mayores.</div>
+      </div>
+      <img src="./imagen1.jpg" alt="Introducción">
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section id="problema">
+    <div class="grid">
+      <div>
+        <h2>Problemas Identificados</h2>
+        <p>Estas dificultades no solo generan incomodidad, sino que afectan directamente la salud al retrasar diagnósticos y tratamientos.</p>
+        <ul>
+          <li>Largas filas en centros de salud</li>
+          <li>Dificultad de traslado</li>
+          <li>Uso complejo de tecnología</li>
+          <li>Dependencia de terceros</li>
+        </ul>
+        <div class="speaker">Michel: Explica cada problema y recalca que afecta la calidad de vida y la salud.</div>
+      </div>
+      <img src="./imagen2.jpg" alt="Problemas identificados">
+    </div>
+  </section>
+
+  <!-- OBJETIVO -->
+  <section id="objetivo">
+    <div class="grid">
+      <div>
+        <h2>Objetivo</h2>
+        <p>Desarrollar una solución tecnológica accesible que permita a los adultos mayores solicitar horas médicas de forma remota, rápida y sencilla.</p>
+        <p>Se busca mejorar la eficiencia del sistema de salud y fomentar la inclusión digital.</p>
+        <div class="speaker">Benja: Explica que el objetivo no es solo tecnológico, sino mejorar la vida de las personas.</div>
+      </div>
+      <img src="./imagen3.jpg" alt="Objetivo">
+    </div>
+  </section>
+
+  <!-- SOLUCION -->
+  <section id="solucion">
+    <div class="grid">
+      <div>
+        <h2>Propuesta de Solución</h2>
+        <p>Se propone una aplicación móvil diseñada específicamente para adultos mayores, priorizando simplicidad y accesibilidad.</p>
+        <p>Incluye navegación intuitiva, botones grandes y asistencia visual y por voz.</p>
+        <div class="speaker">Alan: Explica por qué esta solución sí funciona para este público.</div>
+      </div>
+      <img src="./imagen3.jpg" alt="Propuesta de solución">
+    </div>
+  </section>
+
+  <!-- FUNCIONES -->
+  <section id="funciones">
+    <div class="grid">
+      <div>
+        <h2>Funcionalidades</h2>
+        <p>La aplicación permite un proceso simple: registrarse, seleccionar CESFAM, ver horas disponibles y agendar.</p>
+        <div class="card">Registro con RUT</div>
+        <div class="card">Visualización de horas disponibles</div>
+        <div class="card">Reserva y confirmación</div>
+        <div class="card">Recordatorios automáticos</div>
+        <div class="card">Reprogramación</div>
+        <button onclick="simular()">Simular Reserva</button>
+        <div class="speaker">Josmar: Explica el flujo simple y el diseño accesible.</div>
+      </div>
+      <img src="./imagen4.jpg" alt="Funcionalidades">
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios">
+    <div class="grid">
+      <div>
+        <h2>Beneficios</h2>
+        <p>Para los usuarios: mayor autonomía, ahorro de tiempo y mejor calidad de vida.</p>
+        <p>Para el sistema de salud: menos filas, mejor organización y optimización de recursos.</p>
+        <div class="speaker">Daniel: Explica que todos ganan con esta solución.</div>
+      </div>
+      <img src="./imagen5.jpg" alt="Beneficios">
+    </div>
+  </section>
+
+  <!-- CONCLUSION -->
+  <section>
+    <h2>Conclusión</h2>
+    <p>CESFAM Digital es una solución innovadora que mejora el acceso a la salud, fomenta la inclusión digital y contribuye a un sistema más eficiente y centrado en las personas.</p>
+    <div class="speaker">Daniel: Cierra con impacto, destacando la importancia del proyecto.</div>
+  </section>
+
+  <footer>Proyecto académico 2026</footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+
+    function mostrarSecciones() {
+      sections.forEach(sec => {
+        if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
+          sec.classList.add("visible");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", mostrarSecciones);
+    window.addEventListener("load", mostrarSecciones);
+
+    function simular() {
+      alert("Hora médica reservada correctamente ✅");
+    }
+  </script>
+
+</body>
 </html>
